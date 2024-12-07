@@ -1,0 +1,42 @@
+/* Flexbox no contêiner pai para os detalhes do produto e sugestões */
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Estilo para o container de sugestões */
+#size-selector {
+    display: flex;
+    justify-content: flex-start; /* Alinha opções de tamanho à esquerda */
+    gap: 10px; /* Espaçamento entre os tamanhos */
+}
+
+/* Estilo para cada quadrado de tamanho */
+.size-option {
+    width: 80px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9a871;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Estilo quando o quadrado é selecionado */
+.size-option.selected {
+    background-color: #ac865a;
+    border-color: #ac865a;
+    color: white;
+}
+
+/* Efeito de hover */
+.size-option:hover {
+    background-color: #ac865a;
+}
+

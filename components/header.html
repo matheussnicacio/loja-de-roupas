@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/header.css">
+  <script defer src="../js/header.js"></script>
+</head>
+<body>
+  <nav class="header">
+    <div class="header-container">
+      <a class="header-brand" href="index.html">
+        <img src="./images/logo.png" alt="Logo">
+      </a>
+      <div class="search-div">
+          <input class="search-input" ref="search" type="text">
+          <button><i class="ph ph-magnifying-glass"></i></button>
+      </div>
+      <div class="user-div">
+          <button><a href="login.html" style="text-decoration: none;"><i class="ph ph-user"></i></a></button>
+      </div>
+      <button class="header-toggler" aria-label="Toggle navigation">
+        <i class="ph ph-list"></i>
+      </button>
+      <div class="header-collapse">
+        <div class="menu-top">
+          <p>
+            <button style="color: #A88658"  class="header-toggler" aria-label="Toggle navigation">
+              <i class="ph-bold ph-list"></i>
+              Menu
+            </button>
+            <button style="color: #000" class="header-toggler" aria-label="Toogle navigation">
+              <i class="ph-bold ph-x"></i>
+            </button>
+          </p>
+        </div>
+        <ul class="header-list">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Quem somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>
